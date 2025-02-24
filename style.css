@@ -1,0 +1,79 @@
+
+
+.video-container {
+    position: relative;
+    width: 100vw;  /* عرض الصفحة بالكامل */
+    height: 56.25vw; /* نسبة 16:9 */
+    max-height: 100vh; /* لا يزيد عن ارتفاع الشاشة */
+    overflow: hidden;
+
+}
+
+/* تنسيق الفيديو */
+.video-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* تغطية الفيديو بالصورة */
+.video-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('assets/imageV.avif') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2; /* أعلى من الفيديو */
+}
+
+/* زر التشغيل */
+.play-button {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    justify-content: center;
+    font-size: 100px;
+    color: rgb(238, 238, 238);
+    transition: 0.3s ease;
+}
+
+@media (min-width: 992px) { /* md screens and larger */
+    .con_pad {
+      padding-left: 180px;
+      padding-right: 180px;
+    }
+  }
+ 
+.testimonial-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+}
+.quote-icon {
+  font-size: 50px;
+  color: #0056ff;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+.star-rating i {
+  color: gold;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
