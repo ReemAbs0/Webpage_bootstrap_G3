@@ -18,6 +18,72 @@
 
     <link rel="stylesheet" href="styles.css" />
     
+    <style>
+      .btn-custom {
+    padding: 10px 35px;
+    font-size: 20px;
+}
+.pricing-card {
+    min-height: 500px;
+    width: 350px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+ }
+.badge-new {
+    position: absolute;
+    top: 15px;
+    right: -50px;
+    background: white;
+    color: #0047FF;
+    font-weight: bold;
+    padding: 6px 60px;
+    transform: rotate(45deg);
+    font-size: 22px;
+}
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 70px;
+}
+.highlight {
+    background-color: #0047FF;
+    color: white;
+    position: relative;
+}
+.pricing-card p {
+    margin-bottom: 8px;
+    line-height: 1.2; 
+}
+.pricing-price {
+    background-color: #c1d5ef5c;
+    padding: 15px;
+
+}
+
+.accordion {
+  --bs-accordion-active-color: #0057ff;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  box-shadow: none;
+}
+.accordion-button::after {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>');
+  transition: all 0.5s;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%230057ff" class="bi bi-dash" viewBox="0 0 16 16"><path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/></svg>');
+}
+.accordion-button:focus {
+  box-shadow: none;
+  background-color: transparent !important;
+
+}
+    </style>
 
   </head>
   
@@ -502,12 +568,72 @@
         </div>
       </div>
     </section>
+<!--Zeiad-->
+    <div class="container">
+      <h6 class="text-center mt-5" style="color: gray;">Business Pricing</h6>
+      <h1 class="text-center mt-5">Discover Our <span class="text-primary">Best Plans</span></h1>
+      <div class="pricing-container d-flex flex-wrap justify-content-center">
+
+          <div class="pricing-card bg-light d-flex flex-column  mb-5">
+              <br>
+              <h3>Starter</h3>
+
+              <h4 class="text-primary pricing-price fw-bold  mb-4">FREE</h4>
+              <p>&#10004; 3 projects</p>
+              <p>&#10004; 30-day version history</p>
+              <p>&#10004; Up to 2 editors</p>
+              <p>&#10004; Unlimited cloud storage</p>
+              <p>&#10004; 2 legal advice</p>
+              <p>&#10004; Financial reports</p>
+              <p class="mb-5">&#10004; Tax planning</p>
+              <button class="btn btn-primary btn-custom mt-auto align-self-center mb-5">Get Started</button>
+          </div>
 
 
+          <div class="pricing-card highlight d-flex flex-column  mb-5">
+              <span class="badge-new">NEW</span>
+              <br>
+              <h3>Starter</h3>
+
+              <h4 class="fw-bold pricing-price  mb-4" >$9.99<span class="fs-6">/MO</span></h4>
+              <p>&#10004; 3 projects</p>
+              <p>&#10004; 30-day version history</p>
+              <p>&#10004; Up to 2 editors</p>
+              <p>&#10004; Unlimited cloud storage</p>
+              <p>&#10004; 2 legal advice</p>
+              <p>&#10004; Financial reports</p>
+              <p>&#10004; Tax planning</p>
+              <button class="btn btn-light text-primary btn-custom mt-auto align-self-center mb-5">Get Started</button>
+          </div>
 
 
+          <div class="pricing-card bg-light d-flex flex-column  mb-5">
+              <br>
+              <h3>Business</h3>
 
+              <h4 class="text-primary pricing-price fw-bold mb-4">$14.99<span class="fs-6">/MO</span></h4>
+              <p>&#10004; 3 projects</p>
+              <p>&#10004; 30-day version history</p>
+              <p>&#10004; Up to 2 editors</p>
+              <p>&#10004; Unlimited cloud storage</p>
+              <p>&#10004; 10 legal advice</p>
+              <p>&#10004; Financial reports</p>
+              <p>&#10004; Tax planning</p>
+              <button class="btn btn-primary btn-custom mt-auto align-self-center mb-5">Get Started</button>
+          </div>
+      </div>
+  </div>
 
+  <div class="container-fluid text-white text-center d-flex align-items-center justify-content-center mt-5 mb-5" style="background-image: url('assests/pic6.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 700px;">
+      <div style="padding: 50px 30px; max-width: 800px;">
+          <h1 class="fw-bold display-4" style="font-size: 44px;">We'll suggest the plan that's right for your business</h1>
+          <p class="lead mt-4" style="font-size: 20px;">Ready to start your project? The contact information collected through this form will only be used to send a response to your inquiry.</p>
+          <div class="d-flex flex-column flex-lg-row gap-3 mt-5" style="max-width: 800px; margin: 0 auto;">
+              <input type="email" class="form-control" placeholder="E-mail" aria-label="E-mail" style="height: 60px; font-size: 24px;">
+              <button class="btn btn-primary" type="button" style="height: 60px; font-size: 24px;">Subscribe</button>
+          </div>
+      </div>
+  </div>
 
 
 
@@ -542,6 +668,7 @@ crossorigin="anonymous"
 ></script>
 
  
+
 </body>
 
 </html>
