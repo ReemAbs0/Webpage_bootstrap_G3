@@ -1,5 +1,4 @@
 
-
 .video-container {
     position: relative;
     width: 100vw;  /* عرض الصفحة بالكامل */
@@ -76,4 +75,144 @@
 
 .rotate-180 {
   transform: rotate(180deg);
+}
+/*Mohammad Dwikat*/
+.background1 {
+  background-image: url("assests/Humanoid_Robot.JPG");
+  background-size: cover;
+
+  background-position: top top;
+  background-repeat: no-repeat;
+  padding: 30px;
+  height: 100%;
+}
+
+#home-page {
+  margin-top: 20%;
+}
+#button1 {
+  color: white;
+  background-color: #007bff;
+}
+#button1:hover {
+  color: #007bff;
+  background-color: white;
+}
+
+#button2 {
+  color: #007bff;
+  background-color: white;
+}
+#button2:hover {
+  color: white;
+  background-color: #007bff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  height: 100px;
+  padding: 0 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  height: 60px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-link {
+  color: #333;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+.btn-primary {
+  background-color: #005eff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  margin-left: 15px;
+  color: white;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0041c2;
+}
+
+.dropdown-menu {
+  display: none;
+  margin-top: 0;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-item {
+  color: #333;
+  padding: 8px 20px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: transparent;
+  color: #007bff;
+}
+
+.nav-link.text-dark {
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.nav-link.text-dark:hover {
+  color: #007bff !important;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/*laian*/
+.accordion {
+  --bs-accordion-active-color: #0057ff;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  box-shadow: none;
+}
+.accordion-button::after {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>');
+  transition: all 0.5s;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%230057ff" class="bi bi-dash" viewBox="0 0 16 16"><path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/></svg>');
+}
+.accordion-button:focus {
+  box-shadow: none;
+  background-color: transparent !important;
+
 }
