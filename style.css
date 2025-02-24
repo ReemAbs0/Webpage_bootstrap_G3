@@ -1,5 +1,80 @@
 
-/* REEM */
+ /* Zeyad */
+ .btn-custom {
+    padding: 10px 35px;
+    font-size: 20px;
+}
+.pricing-card {
+    min-height: 500px;
+    width: 350px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+ }
+.badge-new {
+    position: absolute;
+    top: 15px;
+    right: -50px;
+    background: white;
+    color: #0047FF;
+    font-weight: bold;
+    padding: 6px 60px;
+    transform: rotate(45deg);
+    font-size: 22px;
+}
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 70px;
+}
+.highlight {
+    background-color: #0047FF;
+    color: white;
+    position: relative;
+}
+.pricing-card p {
+    margin-bottom: 8px;
+    line-height: 1.2; 
+}
+.pricing-price {
+    background-color: #c1d5ef5c;
+    padding: 15px;
+
+}
+/* Layan*/
+.accordion {
+  --bs-accordion-active-color: #0057ff;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  box-shadow: none;
+}
+.accordion-button::after {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>');
+  transition: all 0.5s;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%230057ff" class="bi bi-dash" viewBox="0 0 16 16"><path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/></svg>');
+}
+.accordion-button:focus {
+  box-shadow: none;
+  background-color: transparent !important;
+
+}
+
+/* Reem*/
+
+@media (min-width: 992px) { /* large screens */
+    .con_pad {
+      padding-left: 180px;
+      padding-right: 180px;
+    }
+  }
+
+
 .video-container {
     position: relative;
     width: 100vw;  /* عرض الصفحة بالكامل */
@@ -43,14 +118,6 @@
     color: rgb(238, 238, 238);
     transition: 0.3s ease;
 }
-
-@media (min-width: 992px) { /* large screens */
-    .con_pad {
-      padding-left: 180px;
-      padding-right: 180px;
-    }
-  }
- 
 .testimonial-card {
   background: #fff;
   padding: 20px;
@@ -77,6 +144,7 @@
 .rotate-180 {
   transform: rotate(180deg);
 }
+
 /*Mohammad Dwikat*/
 .background1 {
   background-image: url("assests/Humanoid_Robot.JPG");
@@ -196,7 +264,3 @@ body {
   display: block;
 }
 
-/*laian*/
-
-
-/* Zeiad*/
