@@ -44,7 +44,7 @@
     transition: 0.3s ease;
 }
 
-@media (min-width: 992px) { /* md screens and larger */
+@media (min-width: 992px) { /* large screens */
     .con_pad {
       padding-left: 180px;
       padding-right: 180px;
