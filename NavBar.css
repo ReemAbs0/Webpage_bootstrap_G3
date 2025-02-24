@@ -74,7 +74,7 @@ body {
 
 .nav-link.text-dark {
     color: #000;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; 
 }
 
 .nav-link.text-dark:hover {
