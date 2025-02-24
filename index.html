@@ -10,9 +10,11 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-  <main>
+
+ 
     <!--Mohammad Dwikat-->
     <div class="background1">
     <div class="container  ">
@@ -77,7 +79,90 @@
 </section>
 
 </div>
-</main>
+
+ 
+  
+    <!--YOUSEF-->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm">
+  <div class="container">
+      <a class="navbar-brand" href="#">
+          <img src="Screenshot 2025-02-24 at 0.48.50.png" alt="Litech Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+              <li class="nav-item dropdown" onmouseover="showDropdown('servicesDropdown')" onmouseout="hideDropdown('servicesDropdown')">
+                  <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">Services</a>
+                  <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                      <li><a class="dropdown-item" href="#">Great Experiences</a></li>
+                      <li><a class="dropdown-item" href="#">Audit And Assurance</a></li>
+                      <li><a class="dropdown-item" href="#">Trades And Stock Market</a></li>
+                      <li><a class="dropdown-item" href="#">Software And Research</a></li>
+                      <li><a class="dropdown-item" href="#">Support And Maintenance</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown" onmouseover="showDropdown('teamDropdown')" onmouseout="hideDropdown('teamDropdown')">
+                  <a class="nav-link dropdown-toggle" href="#" id="teamDropdown" role="button" data-bs-toggle="dropdown">Team</a>
+                  <ul class="dropdown-menu" aria-labelledby="teamDropdown">
+                      <li><a class="dropdown-item" href="#">Mark Lowrens</a></li>
+                      <li><a class="dropdown-item" href="#">Samuel Elliott</a></li>
+                      <li><a class="dropdown-item" href="#">Tom Crasers</a></li>
+                      <li><a class="dropdown-item" href="#">Derek Noisy</a></li>
+                      <li><a class="dropdown-item" href="#">John Rennol</a></li>
+                      <li><a class="dropdown-item" href="#">Jack Rennol</a></li>
+                  </ul>
+              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+              </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="tel:+970599246810">
+                      <img src="phone-80.png" alt="Phone" style="height: 24px; margin-right: 5px;"> +970 599 246810
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a class="btn btn-primary" href="#">Get in touch</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function showDropdown(id) {
+      document.getElementById(id).classList.add('show');
+      document.querySelector(`[aria-labelledby="${id}"]`).classList.add('show');
+  }
+
+  function hideDropdown(id) {
+      document.getElementById(id).classList.remove('show');
+      document.querySelector(`[aria-labelledby="${id}"]`).classList.remove('show');
+  }
+</script>
+
+
+
 
 </body>
 </html>
